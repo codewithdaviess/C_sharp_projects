@@ -1,8 +1,9 @@
 using System;
 
-namespace Auth.Data.AgreggatedRoots;
-
-public class BasicAgreggateRoot<T>
+namespace Auth.Data.AggregatedRoots
 {
-  public string? Id { get; set;}  
+    public class BasicAggregateRoot<T>
+    {
+        public T Id { get; set; } = default!;
+    }
 }
